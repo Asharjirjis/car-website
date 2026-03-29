@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLux - Premium Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2><i class="fas fa-car"></i> AutoLux</h2>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Dream Car</h1>
+            <p class="hero-subtitle">Premium selection of luxury vehicles at unbeatable prices</p>
+            <a href="#cars" class="cta-button">View Cars</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Luxury Car">
+        </div>
+    </section>
+
+    <!-- CAR LISTING SECTION -->
+    <section id="cars" class="cars-section">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+            
+            <!-- FILTER BUTTONS -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="sedan">Sedan</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+
+            <!-- CAR GRID -->
+            <div class="cars-grid" id="carsGrid">
+                <!-- Cars will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About AutoLux</h2>
+                    <p>At AutoLux, we specialize in premium automobiles that combine luxury, performance, and innovation. Our curated collection features the finest vehicles from top manufacturers worldwide.</p>
+                    <p>With years of experience in the automotive industry, we ensure every car meets our rigorous standards of quality and excellence.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Cars Sold</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Brands</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Showroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@autolux.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Auto Avenue, Car City, CC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-car"></i> AutoLux</h3>
+                    <p>Your premier destination for luxury automobiles.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoLux. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
